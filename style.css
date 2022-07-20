@@ -15,6 +15,10 @@ img{
     cursor: pointer;
    
 }
+img:hover{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
 .result{
     width: 200px;
     height: 200px;
@@ -43,7 +47,7 @@ main{
     margin-top: 20px;
 }
 .user{
-    border: 1px solid red;
+
     width: 300px;
     height: 300px;
     text-align: center;
@@ -51,9 +55,20 @@ main{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
+}
+.startGame{
+    position: absolute;
+    top: 220px;
+    right: 650px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
 }
 .computer{
-    border: 1px solid red;
+
     width: 300px;
     height: 300px;
     text-align: center;
@@ -61,4 +76,63 @@ main{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
+}
+.scoreDisplay{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.userScore{
+
+}
+#rock{
+    background: url(./images/rock.png);
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    outline: none;
+    border: none;
+   
+}
+
+#paper{
+    background: url(./images/paper.png);
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    outline: none;
+    border: none;
+   
+}
+
+#scissors{
+    background: url(./images/scissors.png);
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    outline: none;
+    border: none;
+    
+}
+#scissors:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+#paper:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+#rock:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 200ms;
 }
