@@ -15,7 +15,7 @@ ruleBtn.addEventListener("click", (e)=>{
 
 })
 closeRules.addEventListener("click", (e)=>{
-    displayRules.style.zIndex = "-1";
+    displayRules.style.zIndex = "-10";
     displayRules.style.opacity = "0";
 
 })

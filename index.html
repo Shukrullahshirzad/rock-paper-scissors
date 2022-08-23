@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,47 +12,46 @@
   
 </head>
 <body>
-    <main>
-      <header>
-        <div class="header-container">
-          <div class="logo"><img src="./images/logo.svg" alt=""></div>
-          <div class="score"><p>score <span id="score">12</span></p></div>
-        </div>
-      </header>
-      div class="display hide">
+  <main>
+    <header>
+      <div class="header-container">
+        <div class="logo"><img src="./images/logo.svg" alt=""></div>
+        <div class="score"><p>score <span id="score">12</span></p></div>
+      </div>
+    </header>
+    <div class="display">
       <button class="btn paper" value="paper"></button>
       <button class="btn scissors" value="scissors"></button>
       <button class="btn rock" value="rock"></button>
-    </div>
-    <div class="selection">
-     <div class="choices">
-      <div class="player">
-        <button class="btn paper" value="paper"></button>
-        <p>You Picked</p>
-       </div>
-       <div class="house">
-        <button class="btn scissors" value="scissors"></button>
-        <p>The House Picked</p>
-       </div>
-     </div>
-     <div class="display-result winner">
-      <p class="result">You win</p>
-      <button>Play Again</button>
-     </div>
-    </div>
-    <button class="rules-btn">rules</button>
-    </main>
-    <div class="rules">
-      <p>Rules</p>
-      <img src="./images/image-rules.svg" alt="game rules">
-      <button class="close-rules"></button>
+      <div class="selection hide">
+        <div class="choices">
+        <div class="player">
+          <button class="btn" value=""></button>
+          <p>You Picked</p>
+          </div>
+          <div class="house">
+          <button class="btn" value=""></button>
+          <p>The House Picked</p>
+          </div>
+        </div>
+        <div class="display-result winner">
+        <p class="result">You win</p>
+        <button>Play Again</button>
+        </div>
+      </div>
     </div>
     
-      
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Shukrullah Shirzad</a>.
-    </div>
-    <script src="./index.js"></script>
+    <button class="rules-btn">rules</button>
+  </main>
+  <div class="rules">
+    <p>Rules</p>
+    <img src="./images/image-rules.svg" alt="game rules">
+    <button class="close-rules"></button>
+  </div>    
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Shukrullah Shirzad</a>.
+  </div>
+  <script src="./index.js"></script>
 </body>
 </html>
