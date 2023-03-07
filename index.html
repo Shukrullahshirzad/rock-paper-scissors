@@ -1,59 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <!-- google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
-  
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+    
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    
+  </head>
 <body>
-  <main>
-    <header>
-      <div class="header-container">
-        <div class="logo"><img src="./images/logo.svg" alt=""></div>
-        <div class="score"><p>score <span id="score">12</span></p></div>
-      </div>
-    </header>
-    <div class="display">
-      <div class="choice-btns">
-        <button class="btn paper" value="paper"></button>
-        <button class="btn scissors" value="scissors"></button>
-        <button class="btn rock" value="rock"></button>
-      </div>
-      <div class="selection hide">
-        <div class="choices">
-          <div class="player">
-            <button class="btn" value=""></button>
-            <p>You Picked</p>
-          </div>
-          <div class="house">
-            <button class="btn" value=""></button>
-            <p>The House Picked</p>
-          </div>
+  <header class="header">
+    <div class="logo"><img src="./images/logo.svg" alt=""></div>
+    <div><p>Score <span class="score">0</span></p></div>
+  </header>
+  <div class="rules-img hide">
+    <img src="./images/image-rules.svg" alt="game rules">
+    <button class="cross"><img src="./images/icon-close.svg" alt=""></button>
+  </div>
+  <div class="container">
+    <div class="options">
+      <div class="paper option"><img class ="img"src="./images/icon-paper.svg" alt=""></div>
+      <div class="scissors option"><img class ="img"src="./images/icon-scissors.svg" alt=""></div>
+      <div class="rock option"><img class ="img"src="./images/icon-rock.svg" alt=""></div>
+    </div>
+    <div class="show-result hide">
+      <div class="choices">
+        <div class="user-choice"> 
+          <div class=""><img class ="img"src="./images/icon-paper.svg" alt=""></div>
+          <p class="user-para">You Picked</p>
         </div>
-        <div class="display-result winner">
-          <p class="result">You win</p>
+        <div class="result">
+          <p>You Lose</p>
           <button class="play-again">Play Again</button>
+        </div>
+        <div class="computer-choice">
+          <div class=""><img class ="img"src="./images/icon-paper.svg" alt=""></div>
+
+          <p class="com-para">The House Picked</p>
         </div>
       </div>
     </div>
-    
-    <button class="rules-btn">rules</button>
-  </main>
-  <div class="rules">
-    <p>Rules</p>
-    <img src="./images/image-rules.svg" alt="game rules">
-    <button class="close-rules"></button>
-  </div>    
+    <button class="rules-btn">Rules</button>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Shukrullah Shirzad</a>.
   </div>
-  <script src="./index.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
