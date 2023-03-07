@@ -7,7 +7,7 @@ I'll be happy to have your constructive opinions :)
 
 ### Prerequisites
 
-No prerequisites are required for this game to run on your computer. Just click on the [link (https://github.com/your/project/tags)]
+No prerequisites are required for this game to run on your computer. Just click on the link ( https://shukrullahshirzad.github.io/rock-paper-scissors/)
 
 
 ## Built With
